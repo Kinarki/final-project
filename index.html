@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-    <script src="http://code.angularjs.org/1.3.5/angular-route.js"></script>
     <!--<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>-->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="scripts.js"></script>
@@ -19,17 +18,26 @@
 </head>
 <body>
     <div class="container col-xs-12 clearfix">
+        <!--     Control Panel     -->
         <header class="page-header">
-
             <button type="button" class="btn btn-primary pull-left">Create Game</button>
             <button type="button" class="btn btn-primary pull-right">Sign Up</button>
             <span class="pull-right or-span">or</span>
             <button type="button" class="btn btn-primary pull-right">Login</button>
-            <h1><b>Tug-o-war Tournament</b></h1>
+            <h2 class="clearfix"><b>Tug-o-war Tournament</b></h2>
         </header>
+        <!-- Game Area  -->
+        <div class="container">
+            <!--  Game Messages -->
+            <div class="jumbotron">
+                Game Message
+            </div>
 
-        <div class="jumbotron">
-            <div class="container" ng-view>
+            <div class="col-xs-5 col-xs-offset-1">
+                <img src="images/frame-left.png" alt="rope frame" class="pull-left">
+            </div>
+            <div class="col-xs-5">
+                <img src="images/frame-right.png" alt="rope frame" class="pull-right">
             </div>
         </div>
     </div>
